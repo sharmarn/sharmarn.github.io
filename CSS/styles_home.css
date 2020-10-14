@@ -68,7 +68,7 @@ img {
 /* Slideshow container */
 
 .slideshow-container {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -106,7 +106,7 @@ img {
 /* Caption text */
 
 .text {
-  font-size: 50px;
+  font-size: 4vh;
   padding: 8px 12px;
   position: absolute;
   bottom: 35px;
@@ -117,7 +117,7 @@ img {
 /* Sub-Caption text */
 
 .subtext {
-  font-size: 20px;
+  font-size: 2vh;
   padding: 8px 12px;
   position: absolute;
   width: 100%;
@@ -258,6 +258,9 @@ p, #school-types {
   }
   .navigation-section ul li a {
     float: left;
+  }
+  img {
+    height: 300px;
   }
   .welcome-section {
     margin: 38px 0 0 0;

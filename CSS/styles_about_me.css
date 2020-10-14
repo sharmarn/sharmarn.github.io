@@ -60,6 +60,8 @@ body {
 }
 
 #profile-picture {
+    max-width: 35%;
+    max-height: 35%;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
