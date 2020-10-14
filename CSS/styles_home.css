@@ -106,7 +106,7 @@ img {
 /* Caption text */
 
 .text {
-  font-size: 3vw;
+  font-size: 50px;
   padding: 8px 12px;
   position: absolute;
   bottom: 35px;
@@ -117,7 +117,7 @@ img {
 /* Sub-Caption text */
 
 .subtext {
-  font-size: 1vw;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   width: 100%;
@@ -260,7 +260,7 @@ p, #school-types {
     float: left;
   }
   .welcome-section {
-    margin: 40px 0 0 0;
+    margin: 38px 0 0 0;
     width: 100%;
     height: auto;
     float: none;
