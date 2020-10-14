@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/styles_home.css" />
+</head>
+
+<body>
+    <div class="navigation-section">
+        <ul>
+            <li><a href="./home.html"><span>Home</span></a></li>
+            <li><a href="./about_me.html"><span>About Me</span></a></li>
+            <li><a href="mailto:raman.sharma0096@gmail.com?subject = Feedback&body = Message"><span>Contact
+                        <span>&#9993;</span></span></a></li>
+        </ul>
+    </div>
+
+    <div class="welcome-section">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./resources/images/slide_show/goeppingen.jpg" alt="Goeppingen" style="width:100%">
+                <div class="text"><span>Göppingen</span></div>
+                <div class="subtext"><span>Home Town</span></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./resources/images/slide_show/moegy.jpg" alt="Moerike Gymnasium" style="width:100%">
+                <div class="text"><span>Mörike Gymnasium</span></div>
+                <div class="subtext"><span>Secondary schooling</span></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./resources/images/slide_show/informatik_uni_stuttgart.jpg" alt="Universitaet Stuttgart"
+                    style="width:100%">
+                <div class="text"><span>Computer Science Institute</span></div>
+                <div class="subtext"><span>University of Stuttgart</span></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./resources/images/slide_show/bundestag.jpg" alt="Bundestag" style="width:100%">
+                <div class="text"><span>Bundestag</span></div>
+                <div class="subtext"><span>Berlin, Germany</span></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./resources/images/slide_show/delhi_red_fort.png" alt="Red Fort" style="width:100%">
+                <div class="text"><span>Red Fort</span></div>
+                <div class="subtext"><span>Delhi, India</span></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./resources/images/slide_show/swimming.jpg" alt="Swimming" style="width:100%">
+                <div class="text"><span>Swimming pool</span></div>
+                <div class="subtext"><span>Health</span></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div class="slide-buttons" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <div class="text-container">
+            <h2 id="welcome-text"><span>Welcome.</span></h2>
+            <p><span>... to my personal website!</span></p>
+
+            <p>I, Raman Sharma, created this website to tell you who I am! Why? Well, since picture can say more than a
+                thousand
+                words, one can describe him- or herself by means of pictures that in some way tell a story about him or
+                her.
+                So, let me tell you something about me with the help of the slideshow above.</p>
+
+            <p>The first picture from the slideshow tells you where I am from. The picture depicts Goeppingen, a town in
+                southern Germany, part of the Stuttgart Region of Baden-Württemberg. I was born and raised in
+                Goeppingen, and till this day I have been living here.</p>
+
+            <p>The second picture from the slideshow tells you something about my schooling education. This picture
+                depicts the Moerike Gymnasium, the school I attended from the 5th grade to the 12th grade.
+                If you are unfamiliar with the education system in Germany, let me give you a brief summary of it: <br>
+                Children first attend primary school for four years. In their fourth year the decision is made on how to
+                continue their education. The secondary school system is divided into:
+            <p>
+
+            <ul id="school-types">
+                <li>Hauptschule – for less academic students</li>
+                <li>Realschule – for intermediary students</li>
+                <li>Gymnasium – for academic students</li>
+            </ul>
+
+            <p id="school-type-explanation">The Hauptschule ends after the 9th school grade with the Hauptschulabschluss
+                certificate, the Realschule
+                after the 10th grade with the Realschulabschluss certificate. After that, young people can either start
+                some form of vocational training or continue schooling. The Gymnasium ends after the 12th grade
+                with the Abitur certificate, the entitlement to study at a university. <br>
+                So, I guess, now you know that I am not that stupid, right?</p>
+
+            <p>The third picture from the slideshow tells you something about my college studies. This picture
+                depicts the Computer Science Institute in Stuttgart.
+                After completing my school education with the Abitur certificate I decided to purchase a Computer
+                Science degree.
+                I consider myself as a creative head. I also consider myself as a flexible person, i.e. I am willing to
+                do anything that sounds interesting. Creativity and varity are two things that perfectly describe
+                Computer Science, atleast in my opinion. Computer Science covers a varity of fields, such as Machine
+                Learning, Cloud Computing, Mobile Computing and many more. Computer Science gives you the freedom of
+                choice. You can do one thing in different ways.
+            <p>
+
+            <p>The forth picture depicts the Reichstag building, located in Berlin, Germany. The German Bundestag is the
+                national Parliament of the Federal Republic of Germany. Its seat is the Reichstag Building. What does
+                this picture say about me? On one hand, it emphasizes the fact that I am fully integrated, be it the
+                language, abiding by the rules, or be it the understanding of the German culture and history.
+                For me personally, integration has never been an issue. As long as you abide by the rules and carry
+                yourself gently, no one can harm you.</p>
+
+            <p>The fifth picture depicts the Red Fort, a historic fort in the city of Delhi (in Old Delhi) in
+                India. By the end of the last paragraph, I you probably came to the correct conclusion that I am a
+                German with
+                a migrant background. Both my parents are from India. They migrated to Germany in the early 90s. While
+                being fully integrated in Germany, I also accept and respect my Indian heritage.
+            </p>
+
+            <p>The sixth, i.e. last picture depicts a snapshot of a swimming pool taken under the water. It tells you
+                that I am very health conscious.
+                As important as work is, health should not be neglected. Your health is your wealth. In my school time,
+                I used to play for a football team in Goeppingen. Afterwards, I joined a swimming club, because swimming
+                is one of the best exercises, because it engages almost all body parts. After my schooling education, I
+                briefly joined a fitness club.
+                Since October 2019, I have picked up on swimming again.
+            </p>
+        </div>
+    </div>
+
+    <script src="../JS/slide-show.js"></script>
+    <script src="../JS/welcome-headline-style-change.js"></script>
+
+</body>
+
+</html>
