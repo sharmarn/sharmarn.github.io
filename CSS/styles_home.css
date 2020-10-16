@@ -183,10 +183,9 @@ img {
   }
 }
 
-@keyframes fadeInBottom {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10%);
   }
   to {
     opacity: 1
@@ -197,19 +196,19 @@ img {
 
 .slideshow-container {
   animation-duration: 3s;
-  animation-name: fadeInBottom
+  animation-name: fadeIn
 }
 
 .slide-buttons {
   animation-duration: 5s;
-  animation-name: fadeInBottom
+  animation-name: fadeIn
 }
 
 /* Fading animations for all the paragraphs */
 
 p, #school-types {
   animation-duration: 7s;
-  animation-name: fadeInBottom
+  animation-name: fadeIn
 }
 
 /* Text section */
