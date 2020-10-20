@@ -315,6 +315,7 @@ p a {
     background-size: 150%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px gold;
 }
 
 .language:nth-child(2) .stars .fa-star, .language:nth-child(2) .stars .fa-star:before {
@@ -323,6 +324,7 @@ p a {
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px gold;
 }
 
 .language:nth-child(3) .stars .fa-star, .language:nth-child(3) .stars .fa-star:before {
@@ -330,6 +332,7 @@ p a {
     background-size: 170%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px gold;
 }
 
 /* Programming skills */
