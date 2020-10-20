@@ -53,7 +53,7 @@ body {
     width: 70%;
     height: 100%;
     overflow: auto;
-    background-image: url(../resources/images/color_explosions.jpg);
+    background-image: url(resources/images/color_explosions.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -311,14 +311,14 @@ p a {
 }
 
 .language:first-child .stars .fa-star, .language:first-child .stars .fa-star:before {
-    background-image: url('../resources/images/flags/germany.png');
+    background-image: url('resources/images/flags/germany.png');
     background-size: 150%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .language:nth-child(2) .stars .fa-star, .language:nth-child(2) .stars .fa-star:before {
-    background-image: url('../resources/images/flags/india.png');
+    background-image: url('resources/images/flags/india.png');
     background-size: 150%;
     background-position: center;
     -webkit-background-clip: text;
@@ -326,7 +326,7 @@ p a {
 }
 
 .language:nth-child(3) .stars .fa-star, .language:nth-child(3) .stars .fa-star:before {
-    background-image: url('../resources/images/flags/usa.png');
+    background-image: url('resources/images/flags/usa.png');
     background-size: 170%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
