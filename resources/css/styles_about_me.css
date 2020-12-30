@@ -39,6 +39,11 @@ body {
     font-weight: bold;
 }
 
+.navigation-section li a i {
+    margin-right: 6px;
+    font-size: 20px;
+}
+
 .navigation-section li a:hover {
     background-color: #fff;
     color: black;
