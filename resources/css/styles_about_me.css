@@ -345,9 +345,9 @@ p a {
     font-size: 35px !important;
 }
 
-/* Programming skills */
+/* Technical skills */
 
-.programming-skills-container {
+.technical-skills-container {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 2px 25px 40px 25px;
@@ -355,11 +355,11 @@ p a {
     margin: 150px auto;
 }
 
-.programming-skills-container p {
+.technical-skills-container p {
     text-align: left;
 }
 
-.programming-skills {
+.technical-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -433,7 +433,7 @@ p a {
     text-align: center;
 }
 
-/* Hover animations for the language skills, programming skills and hobby sections */
+/* Hover animations for the language skills, technical skills and hobby sections */
 
 @-webkit-keyframes buzz-out-on-hover {
     10% {
