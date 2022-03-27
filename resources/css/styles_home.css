@@ -224,6 +224,10 @@ p, #school-types {
   padding-right: 50px;
 }
 
+.hello {
+  margin-top: 100px;
+}
+
 #welcome-text {
   height: 80px;
 }

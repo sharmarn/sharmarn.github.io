@@ -302,14 +302,15 @@ p a {
 }
 
 .language {
-    border: 1px solid black;
+    border: 1px solid yellow;
     background-color: white;
     color: black;
     margin: 10px;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
-    width: 250px;
+    width: 150px;
 }
+
 
 .language p, .language .stars {
     text-align: center;
@@ -340,6 +341,10 @@ p a {
     -webkit-text-stroke: 1px gold;
 }
 
+.fa-star {
+    font-size: 35px !important;
+}
+
 /* Programming skills */
 
 .programming-skills-container {
@@ -365,11 +370,23 @@ p a {
 .technical-skill {
     flex: 1 0 21%;
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid lightblue;
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
+}
+
+.tech-icon {
+    text-align: center;
+}
+
+.tech-icon-img {
+    height: 50px;
+}
+
+.with-desc {
+    height: 30px !important;
 }
 
 .technical-skill p {
@@ -401,7 +418,7 @@ p a {
 .hobby {
     flex: 1 0 21%;
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid lightgreen;
     background-color: white;
     color: black;
     border-radius: 10px;
