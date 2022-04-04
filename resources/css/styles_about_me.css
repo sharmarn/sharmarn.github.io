@@ -212,6 +212,8 @@ p a {
     color: black;
     position: relative;
     border-radius: 6px;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, yellow 0%, lightblue 50%, lightgreen 100%) 1;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

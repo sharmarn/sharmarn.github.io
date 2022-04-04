@@ -1,150 +1,213 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="resources/css/styles_home.css" />
-</head>
-
-<body>
-    <div class="navigation-section">
-        <ul>
-            <li><a class="link" href="home.html"><i class="fa fa-fw fa-home"></i><span>Home</span></a></li>
-            <li><a class="link" href="about_me.html"><i class="fa fa-fw fa-user"></i><span>About Me</span></a></li>
-            <li><a href="mailto:raman.sharma0096@gmail.com?subject = Feedback&body = Message"><i
-                        class="fa fa-fw fa-envelope"></i><span>Contact
-                    </span></a></li>
-        </ul>
-    </div>
-
-    <div class="welcome-section">
-        <div class="text-container head">
-            <h2 id="welcome-text"><span>Welcome.</span></h2>
-            <p> Hey! I, Raman Sharma, created this website to tell you who I am! Why? Well, since a picture says more than a
-                thousand words, a person can describe him- or herself by means of pictures that in some way tell a story about
-                him or her.
-                So, let me tell you something about me with the help of the slideshow below.</p>
-        </div>
-        <div class="slideshow-container">
-
-            <div class="slide fade">
-                <img src="resources/img/slide_show/goeppingen.jpg" alt="Goeppingen" style="width:100%">
-                <div class="text"><span>Home Town (Göppingen, Germany)</span></div>
-                <div class="subtext"><span>Origin</span></div>
-            </div>
-
-            <div class="slide fade">
-                <img src="resources/img/slide_show/moegy.jpg" alt="Moerike Gymnasium" style="width:100%">
-                <div class="text"><span>Mörike Gymnasium (Göppingen, Germany)</span></div>
-                <div class="subtext"><span>Secondary schooling</span></div>
-            </div>
-
-            <div class="slide fade">
-                <img src="resources/img/slide_show/informatik_uni_stuttgart.jpg" alt="Universitaet Stuttgart"
-                    style="width:100%">
-                <div class="text"><span>Computer Science Institute (University of Stuttgart)</span></div>
-                <div class="subtext"><span>Higher education</span></div>
-            </div>
-
-            <div class="slide fade">
-                <img src="resources/img/slide_show/bundestag.jpg" alt="Bundestag" style="width:100%">
-                <div class="text"><span>Bundestag (Berlin, Germany)</span></div>
-                <div class="subtext"><span>Integration</span></div>
-            </div>
-
-            <div class="slide fade">
-                <img src="resources/img/slide_show/delhi_red_fort.png" alt="Red Fort" style="width:100%">
-                <div class="text"><span>Red Fort (Delhi, India)</span></div>
-                <div class="subtext"><span>Roots</span></div>
-            </div>
-            <div class="slide fade">
-                <img src="resources/img/slide_show/swimming.jpg" alt="Swimming" style="width:100%">
-                <div class="text"><span>Swimming pool (Somewhere)</span></div>
-                <div class="subtext"><span>Fitness</span></div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div class="slide-buttons" style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
-        <div class="text-container main">
-            <div class="text-to-slide"><p> The first picture tells you where I am from. It depicts Goeppingen, a town in
-                southern Germany, part of the Stuttgart Region of Baden-Württemberg. I was born and raised in
-                Goeppingen, and till this day I have been living here.</p></div>
-
-            <div class="text-to-slide"><p> The second picture tells you something about my schooling education. Excuse me for the
-                bad quality of the picture as I could not find a better picture of my school since
-                there are not many of it available on the internet. Nonetheless, this picture
-                depicts the Moerike Gymnasium, the school I attended from the 5th grade to the 12th grade.
-                If you are unfamiliar with the education system in Germany, let me give you a brief summary of it: <br>
-                Children first attend primary school for four years. In their fourth year the decision is made on how to
-                continue their education. The secondary school system is divided into: </p>
-
-            <ul id="school-types">
-                <li>Hauptschule – for less academic students</li>
-                <li>Realschule – for intermediary students</li>
-                <li>Gymnasium – for academic students</li>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="resources/css/styles_home.css">
+    </head>
+    <body>
+        <div class="navigation-section">
+            <ul>
+                <li>
+                    <a class="link" href="home.html">
+                        <i class="fa fa-fw fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link" href="about_me.html">
+                        <i class="fa fa-fw fa-user"></i>
+                        <span>About Me</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:raman.sharma0096@gmail.com?subject = Feedback&body = Message">
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span>
+                            Contact
+                        </span>
+                    </a>
+                </li>
             </ul>
-
-            <p id="school-type-explanation"> The Hauptschule ends after the 9th school grade with the Hauptschulabschluss
-                certificate, the Realschule
-                after the 10th grade with the Realschulabschluss certificate. After that, young people can either start
-                some form of vocational training or continue schooling. The Gymnasium ends after the 12th grade
-                with the Abitur certificate, the entitlement to study at a university. <br>
-                So, I guess, now you know that I am not that stupid, right? </p></div>
-
-            <div class="text-to-slide"><p> The third picture tells you something about my college studies.
-                It depicts the Computer Science Institute of the University of Stuttgart, in Stuttgart.
-                After completing my school education with the Abitur certificate I decided to purchase a Computer
-                Science degree.
-                I consider myself as a creative head. Also, I consider myself as a flexible person, i.e. I am willing to
-                do anything that sounds interesting. Creativity and varity are two things that perfectly describe
-                Computer Science, atleast in my opinion. Computer Science covers a varity of fields, such as Machine
-                Learning, Cloud Computing, Mobile Computing and many more. Computer Science gives you the freedom of
-                choice. You can accomplish a task in different ways. </p></div>
-
-            <div class="text-to-slide"><p> The forth picture depicts the Reichstag building, located in Berlin, Germany. The German Bundestag is the
-                national Parliament of the Federal Republic of Germany. Its seat is the Reichstag Building. What does
-                this picture say about me? On the one hand, it emphasizes the fact that I am fully integrated, be it the
-                language, abiding by the rules, or be it the understanding of the German culture and history.
-                For me personally, integration has never been an issue. As long as you abide by the rules and carry
-                yourself gently, no one can harm you. </p></div>
-
-            <div class="text-to-slide"><p> The fifth picture depicts the Red Fort, a historic fort in the city of Delhi (in Old Delhi) in
-                India. By the end of the last paragraph, you probably came to the correct conclusion that I am a
-                German with a migrant background. Both my parents are from India. They migrated to Germany in the early
-                90s.
-                While being fully integrated in Germany, I also accept and respect my Indian heritage. </p></div>
-
-            <div class="text-to-slide"><p> The sixth, i.e. last picture depicts a snapshot of a swimming pool taken under the water. It tells you
-                that I am very health conscious.
-                As important as work is, health should not be neglected. Your health is your wealth. In my school time,
-                I used to play for a football team in Goeppingen. Afterwards, I joined a swimming club, because swimming
-                is one of the best exercises, as it engages almost all body parts. After my schooling education, I
-                briefly joined a fitness club.
-                Since October 2019, I have picked up on swimming again. </p></div>
         </div>
-    </div>
-
-    <script src="resources/js/slide-show.js"></script>
-    <script src="resources/js/welcome-headline-style-change.js"></script>
-
-</body>
-
+        <div class="welcome-section">
+            <div class="text-container head">
+                <h2 id="welcome-text">
+                    <span>Welcome.</span>
+                </h2>
+                <p>
+                    Hey! I, Raman Sharma, created this website to tell you who I am! Why? Well, since a picture says more
+                than a
+                thousand words, a person can describe him- or herself by means of pictures that in some way tell a story
+                about
+                him or her.
+                So, let me tell you something about me with the help of the slideshow below.
+                </p>
+            </div>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="resources/img/slide_show/goeppingen.jpg" alt="Goeppingen" style="width:100%">
+                    <div class="text">
+                        <span>Home Town (Göppingen, Germany)</span>
+                    </div>
+                    <div class="subtext">
+                        <span>Origin</span>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="resources/img/slide_show/moegy.jpeg" alt="Moerike Gymnasium" style="width:100%">
+                    <div class="text">
+                        <span>Mörike Gymnasium (Göppingen, Germany)</span>
+                    </div>
+                    <div class="subtext">
+                        <span>Secondary schooling</span>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="resources/img/slide_show/informatik_uni_stuttgart.jpg" alt="Universitaet Stuttgart" style="width:100%">
+                    <div class="text">
+                        <span>Computer Science Institute (University of Stuttgart)</span>
+                    </div>
+                    <div class="subtext">
+                        <span>Higher education</span>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="resources/img/slide_show/bundestag.jpg" alt="Bundestag" style="width:100%">
+                    <div class="text">
+                        <span>Bundestag (Berlin, Germany)</span>
+                    </div>
+                    <div class="subtext">
+                        <span>Integration</span>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="resources/img/slide_show/delhi_red_fort.png" alt="Red Fort" style="width:100%">
+                    <div class="text">
+                        <span>Red Fort (Delhi, India)</span>
+                    </div>
+                    <div class="subtext">
+                        <span>Roots</span>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="resources/img/slide_show/swimming.jpg" alt="Swimming" style="width:100%">
+                    <div class="text">
+                        <span>Swimming pool (Somewhere)</span>
+                    </div>
+                    <div class="subtext">
+                        <span>Health</span>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="slide-buttons" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <div class="text-container main">
+                <div class="text-to-slide">
+                    <p>
+                        The first picture tells you where I am from. It depicts Goeppingen, a town in
+                    southern Germany, part of the Stuttgart Region of Baden-Württemberg. I was born and raised in
+                    Goeppingen, and till this day I have been living here.
+                    </p>
+                </div>
+                <div class="text-to-slide">
+                    <p>
+                        The second picture tells you something about my schooling education. It
+                    depicts the Moerike Gymnasium, the school I attended from the 5th grade to the 12th grade.
+                    If you are unfamiliar with the education system in Germany, let me give you a brief summary of it:
+                        <br>
+                        Children first attend primary school for four years. In their fourth year the decision is made on
+                    how to
+                    continue their education. The secondary school system is divided into:
+                    </p>
+                    <ul id="school-types">
+                        <li>Hauptschule – for less academic students</li>
+                        <li>Realschule – for intermediary students</li>
+                        <li>Gymnasium – for academic students</li>
+                    </ul>
+                    <p id="school-type-explanation">
+                        The Hauptschule ends after the 9th school grade with the
+                    Hauptschulabschluss
+                    certificate, the Realschule
+                    after the 10th grade with the Realschulabschluss certificate. After that, young people can either
+                    start
+                    some form of vocational training or continue schooling. The Gymnasium ends after the 12th grade
+                    with the Abitur certificate, the entitlement to study at a university.
+                        <br>
+                        So, I guess, now you know that I am not that stupid, right?
+                    </p>
+                </div>
+                <div class="text-to-slide">
+                    <p>
+                        The third picture tells you something about my college studies.
+                    It depicts the Computer Science Institute of the University of Stuttgart, in Stuttgart.
+                    After completing my school education with the Abitur certificate I decided to purchase a Computer
+                    Science degree.
+                    I consider myself as a creative head. Also, I consider myself as a flexible person, i.e. I am
+                    willing to
+                    do anything that sounds interesting. Creativity and varity are two things that perfectly describe
+                    Computer Science, atleast in my opinion. Computer Science covers a varity of fields, such as Machine
+                    Learning, Cloud Computing, Mobile Computing and many more. Computer Science gives you the freedom of
+                    choice. You can accomplish a task in different ways.
+                    </p>
+                </div>
+                <div class="text-to-slide">
+                    <p>
+                        The forth picture depicts the Reichstag building, located in Berlin, Germany. The German Bundestag
+                    is the
+                    national Parliament of the Federal Republic of Germany. Its seat is the Reichstag Building. What
+                    does
+                    this picture say about me? On the one hand, it emphasizes the fact that I am fully integrated, be it
+                    the
+                    language, abiding by the rules, or be it the understanding of the German culture and history.
+                    For me personally, integration has never been an issue. As long as you abide by the rules and carry
+                    yourself gently, no one can harm you.
+                    </p>
+                </div>
+                <div class="text-to-slide">
+                    <p>
+                        The fifth picture depicts the Red Fort, a historic fort in the city of Delhi (in Old Delhi) in
+                    India. By the end of the last paragraph, you probably came to the correct conclusion that I am a
+                    German with a migrant background. Both my parents are from India. They migrated to Germany in the
+                    early
+                    90s.
+                    While being fully integrated in Germany, I also accept and respect my Indian heritage.
+                    </p>
+                </div>
+                <div class="text-to-slide">
+                    <p>
+                        The sixth, i.e. last picture depicts a snapshot of a swimming pool taken under the water. It tells
+                    you
+                    that I am very health conscious.
+                    As important as work is, health should not be neglected. Your health is your wealth. In my school
+                    time,
+                    I used to play for a football team in Goeppingen. Afterwards, I joined a swimming club, because
+                    swimming
+                    is one of the best exercises, as it engages almost all body parts. After my schooling education, I
+                    briefly joined a fitness club.
+                    Since October 2019, I have picked up on swimming again.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="resources/js/slide-show.js"></script>
+        <script src="resources/js/welcome-headline-style-change.js"></script>
+    </body>
 </html>

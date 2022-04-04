@@ -122,7 +122,7 @@ img {
 /* Sub-Caption text */
 
 .subtext {
-  font-size: 2vh;
+  font-size: 2.5vh;
   padding: 8px 12px;
   position: absolute;
   width: 100%;
@@ -226,10 +226,6 @@ p, #school-types {
 
 .main {
   margin-top: 100px;
-}
-
-#welcome-text {
-  height: 80px;
 }
 
 #welcome-text span {
