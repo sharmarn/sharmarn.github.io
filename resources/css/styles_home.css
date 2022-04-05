@@ -1,60 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Navigation section*/
-
-.navigation-section {
-  float: left;
-  background-color: black;
-  width: 30%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-.navigation-section ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 3px;
-}
-
-.navigation-section li a {
-  display: block;
-  color: #fff;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.navigation-section li a i {
-  margin-right: 6px;
-  font-size: 20px;
-}
-
-.navigation-section li a {
-  font-weight: bold;
-}
-
-.navigation-section li a:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.navigation-section li a:hover span {
-  font-weight: bold;
-}
-
 /* Welcome section */
 
 .welcome-section {
@@ -80,7 +23,8 @@ img {
 
 /* Next & previous buttons */
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -104,7 +48,8 @@ img {
 
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -130,7 +75,8 @@ img {
   text-align: center;
 }
 
-.text span, .subtext span {
+.text span,
+.subtext span {
   background-color: black;
   color: white;
   padding: 4px;
@@ -149,7 +95,8 @@ img {
   border-radius: 20px;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -164,27 +111,29 @@ img {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 /* On smaller screens, decrease text size */
 
 @media only screen and (max-width: 300px) {
-  .prev, .next, .text {
-    font-size: 11px
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
   }
 }
 
@@ -193,7 +142,7 @@ img {
     opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -201,19 +150,20 @@ img {
 
 .slideshow-container {
   animation-duration: 3s;
-  animation-name: fadeIn
+  animation-name: fadeIn;
 }
 
 .slide-buttons {
   animation-duration: 5s;
-  animation-name: fadeIn
+  animation-name: fadeIn;
 }
 
 /* Fading animations for all the paragraphs */
 
-p, #school-types {
+p,
+#school-types {
   animation-duration: 7s;
-  animation-name: fadeIn
+  animation-name: fadeIn;
 }
 
 /* Text section */
@@ -250,19 +200,6 @@ p, #school-types {
 /* Layout representation for certain screen width */
 
 @media screen and (max-width: 900px) {
-  .navigation-section {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }
-  .navigation-section ul li {
-    display: inline-block;
-  }
-  .navigation-section ul li a {
-    float: left;
-  }
   img {
     height: 300px;
   }
@@ -275,20 +212,6 @@ p, #school-types {
 }
 
 @media screen and (max-width: 500px) {
-  .navigation-section {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }
-  .navigation-section ul li {
-    display: unset;
-  }
-  .navigation-section ul li a {
-    float: none;
-    display: block;
-  }
   .welcome-section {
     margin: 100px 0 0 0;
     width: 100%;

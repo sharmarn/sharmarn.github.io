@@ -1,7 +1,9 @@
 /* Navigation section*/
 
 .navigation-section {
+  float: left;
   background-color: black;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -38,4 +40,39 @@
 
 .navigation-section li a:hover span {
   font-weight: bold;
+}
+
+/* Layout representation for certain screen width */
+
+@media screen and (max-width: 900px) {
+  .navigation-section {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+  .navigation-section ul li {
+    display: inline-block;
+  }
+  .navigation-section ul li a {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-section {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+  .navigation-section ul li {
+    display: unset;
+  }
+  .navigation-section ul li a {
+    float: none;
+    display: block;
+  }
 }
