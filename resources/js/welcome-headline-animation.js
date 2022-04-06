@@ -15,7 +15,7 @@ var executeWelcomeHeadlineStyleChange = () => {
       });
       $welcomeText.css({
         background:
-          "-webkit-linear-gradient(45deg, yellow, lightblue, lightgreen)",
+          "-webkit-linear-gradient(45deg, yellow, lightskyblue, lightgreen)",
         "-webkit-background-clip": "text",
         "-webkit-text-fill-color": "transparent",
       });
@@ -24,7 +24,7 @@ var executeWelcomeHeadlineStyleChange = () => {
   } else {
     $welcomeText.css({
       background:
-        "-webkit-linear-gradient(45deg, yellow, lightblue, lightgreen)",
+        "-webkit-linear-gradient(45deg, yellow, lightskyblue, lightgreen)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
       width: "250px",
